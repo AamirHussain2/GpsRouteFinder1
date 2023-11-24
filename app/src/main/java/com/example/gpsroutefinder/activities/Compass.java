@@ -3,6 +3,7 @@ package com.example.gpsroutefinder.activities;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.annotation.SuppressLint;
+import android.graphics.Color;
 import android.hardware.Sensor;
 import android.hardware.SensorEvent;
 import android.hardware.SensorEventListener;
@@ -41,7 +42,7 @@ public class Compass extends AppCompatActivity implements SensorEventListener {
     private void setRunTimeActionBar() {
         compassBinding.actionBar.settingBtn.setVisibility(View.GONE);
         compassBinding.actionBar.tvGps.setVisibility(View.GONE);
-        compassBinding.actionBar.toolBar.setBackgroundColor(android.R.color.transparent);
+        compassBinding.actionBar.toolBar.setBackgroundColor(Color.TRANSPARENT);
 //        compassBinding.actionBar.toolBar.setBackground(getResources().);
         compassBinding.actionBar.backArrow.setOnClickListener(view -> onBackPressed());
     }

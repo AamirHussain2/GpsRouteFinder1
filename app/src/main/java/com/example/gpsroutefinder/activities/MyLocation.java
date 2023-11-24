@@ -14,6 +14,7 @@ import android.location.Address;
 import android.location.Geocoder;
 import android.location.Location;
 
+import android.location.LocationManager;
 import android.os.Bundle;
 import android.provider.Settings;
 import android.util.Log;
@@ -58,6 +59,37 @@ public class MyLocation extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         myLocationBinding = MyLocationBinding.inflate(getLayoutInflater());
         setContentView(myLocationBinding.getRoot());
+
+        if (!isLocationEnabled(this)) {
+//            promptUserToEnableLocation();
+            //if location is not turned on, Pop custom dialog
+            AlertDialog.Builder notifyLocationServices = new AlertDialog.Builder(MyLocation.this);
+            notifyLocationServices.setTitle("Switch on Location Services");
+            notifyLocationServices.setMessage("Location Services must be turned on to complete this action. Also please take note that if on a very weak network connection,  such as 'E' Mobile Data or 'Very weak Wifi-Connections' it may take even 15 mins to load. If on a very weak network connection as stated above, location returned to application may be null or nothing and cause the application to crash.");
+
+            notifyLocationServices.setPositiveButton("Ok, Open Settings", new DialogInterface.OnClickListener() {
+                @Override
+                public void onClick(DialogInterface dialog, int which) {
+                    Intent openLocationSettings = new Intent(Settings.ACTION_LOCATION_SOURCE_SETTINGS);
+                    MyLocation.this.startActivity(openLocationSettings);
+                    finish();
+                }
+            });
+            notifyLocationServices.setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
+                @Override
+                public void onClick(DialogInterface dialog, int which) {
+
+                    finish();
+                }
+            });
+            notifyLocationServices.show();
+        }
+
+        //Dialog
+        //cancel -> close.dialog
+        //settings -> run this function {
+        //                          promptUserToEnableLocation()
+        //                          }
 
         // Obtain the SupportMapFragment and get notified when the map is ready to be used.
         supportMapFragment = (SupportMapFragment) getSupportFragmentManager().findFragmentById(R.id.googleMap);
@@ -155,7 +187,6 @@ public class MyLocation extends AppCompatActivity {
             return;
         }
 
-        Task<Location>  task = fusedLocationProviderClient.getLastLocation();
 
         if (isLocationEnabled(MyLocation.this)) {
             Log.e("TAG", "GPS is on");
@@ -171,6 +202,7 @@ public class MyLocation extends AppCompatActivity {
                 return;
             }
 
+            Task<Location>  task = fusedLocationProviderClient.getLastLocation();
             task.addOnSuccessListener(new OnSuccessListener<Location>() {
                 @Override
                 public void onSuccess(Location location) {
@@ -275,6 +307,18 @@ public class MyLocation extends AppCompatActivity {
         shareIntent.putExtra(Intent.EXTRA_TEXT, locationAddress1);
         // Start the share activity
         startActivity(Intent.createChooser(shareIntent, "Share via"));
+    }
+
+    private boolean isLocationTurnedOn(Context context) {
+        LocationManager locationManager = (LocationManager) context.getSystemService(Context.LOCATION_SERVICE);
+        boolean isGpsEnabled = locationManager.isProviderEnabled(LocationManager.GPS_PROVIDER);
+        boolean isNetworkEnabled = locationManager.isProviderEnabled(LocationManager.NETWORK_PROVIDER);
+        return isGpsEnabled || isNetworkEnabled;
+    }
+
+    private void promptUserToEnableLocation() {
+        Intent intent = new Intent(Settings.ACTION_LOCATION_SOURCE_SETTINGS);
+        startActivity(intent);
     }
 
 }

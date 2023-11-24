@@ -9,8 +9,6 @@ import com.example.gpsroutefinder.databinding.NumberLocatorBinding;
 
 public class MainActivity extends AppCompatActivity {
 
-
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <!-- Primary brand color. -->
+    <color name="colorPrimary">#8F78F4</color>
+    <color name="colorPrimaryDark">#FFFFFFFF</color>
+    <color name="colorOnPrimary">#FFFFFFFF</color>
+    <!-- Secondary brand color. -->
+    <color name="colorSecondary">#2A2E43</color>
+    <color name="colorSecondaryDark">#2A2E43</color>
+    <color name="colorOnSecondary">#2A2E43</color>
+    <color name="colorAccent">#5C3EDF</color>
+    <color name="colorShare">#D369367B</color>
+    <color name="colorReset">#E41E5781</color>
+    <color name="colorStarting">#E2E5F3</color>
+
+    <color name="windowBackground">#E6E9F4</color>
+
+    <color name="blackShade1">#292D36</color>
+
+
+
+</resources>

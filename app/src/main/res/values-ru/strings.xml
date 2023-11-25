@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Поиск маршрута GPS</string>
+    <string name="app_id">ca-app-pub-3940256099942544~3347511713</string>
+    <string name="banner_ad_unit_id">ca-app-pub-3940256099942544/6300978111</string>
+
+    <string name="gps">GPS</string>
+    <string name="setting">Настройки</string>
+    <string name="exploreNearby">Исследовать поблизости</string>
+    <string name="navigationTools">Навигационные инструменты</string>
+    <string name="translate">Перевести</string>
+    <string name="translator">Переводчик</string>
+    <string name="compass">Компас</string>
+    <string name="speedometer">Спидометр</string>
+    <string name="world_clock">Мировые часы</string>
+    <string name="date_calculator">Калькулятор даты</string>
+    <string name="select_language">Выберите язык</string>
+    <string name="english">Английский</string>
+    <string name="urdu">Урду</string>
+    <string name="hello_blank_fragment">Привет, пустой фрагмент</string>
+    <string name="traffic_alerts">Пробки</string>
+    <string name="street_view">Панорама улиц</string>
+    <string name="satellite_map">Спутниковая карта</string>
+    <string name="live_map">Живая карта</string>
+    <string name="figure_not_found">Фигура не найдена</string>
+    <string name="time_with_in">Время в пределах</string>
+    <string name="reset">Сброс</string>
+    <string name="share">Поделиться</string>
+    <string name="seconds">Секунды</string>
+    <string name="minutes">Минуты</string>
+    <string name="hours">Часы</string>
+    <string name="days">Дни</string>
+    <string name="weeks">Недели</string>
+    <string name="weekends">Уикенды</string>
+    <string name="business_days">Рабочие дни</string>
+    <string name="calculate">Вычислить</string>
+    <string name="start_date">Дата начала</string>
+    <string name="end_date">Дата окончания</string>
+    <string name="xyz">xyz</string>
+    <string name="find_route">Найти маршрут</string>
+    <string name="starting">Начало</string>
+    <string name="my_location">Мое местоположение</string>
+    <string name="number_locator">Определитель номера</string>
+    <string name="voice_navigation">Голосовая навиг ация</string>
+    <string name="weather">Погода</string>
+    <string name="nearby_places">Ближайшие места</string>
+    <string name="navigation_tools">Навигационные инструменты</string>
+    <string name="destination">Пункт назначения</string>
+    <string name="find_out_people">Найти людей, которых вам важно найти по номеру телефона</string>
+    <string name="enter_phone_number">Введите номер телефона</string>
+    <string name="find_location">Найти местоположение</string>
+    <string name="navigation">Навигация</string>
+    <string name="feedback">Обратная связь</string>
+    <string name="privacy_policy">Политика конфиденциальности</string>
+    <string name="start">Начать</string>
+    <string name="enter_or_paste_your_text">Введите или вставьте ваш текст</string>
+
+    <string-array name="search_language">
+        <item>Африкаанс</item>
+        <item>Албанский</item>
+        <item>Амхарский</item>
+        <item>Арабский</item>
+        <item>Армянский</item>
+        <item>Азербайджанский</item>
+        <item>Баскский</item>
+        <item>Белорусский</item>
+        <item>Бенгальский</item>
+        <item>Боснийский</item>
+        <item>Болгарский</item>
+        <item>Китайский (Упрощенный)</item>
+        <item>Китайский (Традиционный)</item>
+        <item>Корсиканский</item>
+        <item>Хорватский</item>
+        <item>Чешский</item>
+        <item>Датский</item>
+        <item>Голландский</item>
+        <item>Английский</item>
+        <item>Эсперанто</item>
+        <item>Эстонский</item>
+        <item>Финский</item>
+        <item>Французский</item>
+        <item>Фризский</item>
+        <item>Галисийский</item>
+        <item>Грузинский</item>
+        <item>Немецкий</item>
+        <item>Греческий</item>
+        <item>Гуджарати</item>
+        <item>Гаитянский креольский</item>
+        <item>Хауса</item>
+        <item>Гавайский</item>
+        <item>Иврит</item>
+        <item>Хинди</item>
+        <item>Хмонг</item>
+        <item>Венгерский</item>
+        <item>Исландский</item>
+        <item>Игбо</item>
+        <item>Индонезийский</item>
+        <item>Ирландский</item>
+        <item>Итальянский</item>
+        <item>Японский</item>
+        <item>Яванский</item>
+        <item>Каннада</item>
+        <item>Казахский</item>
+        <item>Кхмерский</item>
+        <item>Киньяруанда</item>
+        <item>Корейский</item>
+        <item>Курдский</item>
+        <item>Киргизский</item>
+        <item>Лаосский</item>
+        <item>Латынь</item>
+        <item>Латышский</item>
+        <item>Литовский</item>
+        <item>Люксембургский</item>
+        <item>Македонский</item>
+        <item>Малагасийский</item>
+        <item>Малайский</item>
+        <item>Малаялам</item>
+        <item>Мальтийский</item>
+        <item>Маори</item>
+        <item>Маратхи</item>
+        <item>Монгольский</item>
+        <item>Мьянма (Бирманский)</item>
+        <item>Непалийский</item>
+        <item>Норвежский</item>
+        <item>Ньянджа (Чичева)</item>
+        <item>Одия (Ория)</item>
+        <item>Пушту</item>
+        <item>Персидский</item>
+        <item>Польский</item>
+        <item>Португальский (Португалия, Бразилия)</item>
+        <item>Панджаби</item>
+        <item>Румынский</item>
+        <item>Русский</item>
+        <item>Самоанский</item>
+        <item>Шотландский гэльский</item>
+        <item>Сербский</item>
+        <item>Сесото</item>
+        <item>Шона</item>
+        <item>Синдхи</item>
+        <item>Сингальский (Сингальский)</item>
+        <item>Словацкий</item>
+        <item>Словенский</item>
+        <item>Сомали</item>
+        <item>Испанский</item>
+        <item>Сунданский</item>
+        <item>Суахили</item>
+        <item>Шведский</item>
+        <item>Тагальский (Филиппины)</item>
+        <item>Таджикский</item>
+        <item>Тамильский</item>
+        <item>Татарский</item>
+        <item>Телугу</item>
+        <item>Тайский</item>
+        <item>Турецкий</item>
+        <item>Туркменский</item>
+        <item>Украинский</item>
+        <item>Урду</item>
+        <item>Уйгурский</item>
+        <item>Узбекский</item>
+        <item>Вьетнамский</item>
+        <item>Уэльский</item>
+        <item>Зоса</item>
+        <item>Идиш</item>
+        <item>Йоруба</item>
+        <item>Зулу</item>
+    </string-array>
+</resources>

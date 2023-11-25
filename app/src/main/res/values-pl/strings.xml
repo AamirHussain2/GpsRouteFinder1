@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Znajdź trasę GPS</string>
+    <string name="app_id">ca-app-pub-3940256099942544~3347511713</string>
+    <string name="banner_ad_unit_id">ca-app-pub-3940256099942544/6300978111</string>
+
+    <string name="gps">GPS</string>
+    <string name="setting">Ustawienia</string>
+    <string name="exploreNearby">Odkryj w okolicy</string>
+    <string name="navigationTools">Narzędzia nawigacyjne</string>
+    <string name="translate">Tłumacz</string>
+    <string name="translator">Tłumacz</string>
+    <string name="compass">Kompas</string>
+    <string name="speedometer">Prędkościomierz</string>
+    <string name="world_clock">Zegar światowy</string>
+    <string name="date_calculator">Kalkulator dat</string>
+    <string name="select_language">Wybierz język</string>
+    <string name="english">Angielski</string>
+    <string name="urdu">Urdu</string>
+    <string name="hello_blank_fragment">Witaj pustym fragmencie</string>
+    <string name="traffic_alerts">Alerty ruchu</string>
+    <string name="street_view">Widok uliczny</string>
+    <string name="satellite_map">Mapa satelitarna</string>
+    <string name="live_map">Mapa na żywo</string>
+    <string name="figure_not_found">Brak figury</string>
+    <string name="time_with_in">Czas w ciągu</string>
+    <string name="reset">Resetuj</string>
+    <string name="share">Udostępnij</string>
+    <string name="seconds">Sekundy</string>
+    <string name="minutes">Minuty</string>
+    <string name="hours">Godziny</string>
+    <string name="days">Dni</string>
+    <string name="weeks">Tygodnie</string>
+    <string name="weekends">Weekendy</string>
+    <string name="business_days">Dni robocze</string>
+    <string name="calculate">Oblicz</string>
+    <string name="start_date">Data rozpoczęcia</string>
+    <string name="end_date">Data zakończenia</string>
+    <string name="xyz">xyz</string>
+    <string name="find_route">Znajdź trasę</string>
+    <string name="starting">Rozpoczęcie</string>
+    <string name="my_location">Moja lokalizacja</string>
+    <string name="number_locator">Lokalizator numerów</string>
+    <string name="voice_navigation">Nawigacja głosowa</string>
+    <string name="weather">Pogoda</string>
+    <string name="nearby_places">Miejsca w pobliżu</string>
+    <string name="navigation_tools">Narzędzia nawigacyjne</string>
+    <string name="destination">Cel</string>
+    <string name="find_out_people">Znajdź osoby, którym zależy na numerze telefonu</string>
+    <string name="enter_phone_number">Wprowadź numer telefonu</string>
+    <string name="find_location">Znajdź lokalizację</string>
+    <string name="navigation">Nawigacja</string>
+    <string name="feedback">Opinie</string>
+    <string name="privacy_policy">Polityka prywatności</string>
+    <string name="start">Rozpocznij</string>
+    <string name="enter_or_paste_your_text">Wprowadź lub wklej tekst</string>
+
+    <string-array name="search_language">
+        <item>Afrykanerski</item>
+        <item>Albański</item>
+        <item>Amharski</item>
+        <item>Arabski</item>
+        <item>Ormiański</item>
+        <item>Azerbejdżański</item>
+        <item>Baskijski</item>
+        <item>Białoruski</item>
+        <item>Bengalski</item>
+        <item>Bośniacki</item>
+        <item>Bułgarski</item>
+        <item>Chiński (uproszczony)</item>
+        <item>Chiński (tradycyjny)</item>
+        <item>Korsykański</item>
+        <item>Chorwacki</item>
+        <item>Czeski</item>
+        <item>Duński</item>
+        <item>Holenderski</item>
+        <item>Angielski</item>
+        <item>Esperanto</item>
+        <item>Estoński</item>
+        <item>Fiński</item>
+        <item>Francuski</item>
+        <item>Fryzyjski</item>
+        <item>Galicyjski</item>
+        <item>Gruziński</item>
+        <item>Niemiecki</item>
+        <item>Grecki</item>
+        <item>Gudżarati</item>
+        <item>Haitański Kreolski</item>
+        <item>Hausa</item>
+        <item>Hawajski</item>
+        <item>Hebrajski</item>
+        <item>Hinduski</item>
+        <item>Hmong</item>
+        <item>Węgierski</item>
+        <item>Islandzki</item>
+        <item>Igbo</item>
+        <item>Indonezyjski</item>
+        <item>Irlandzki</item>
+        <item>Włoski</item>
+        <item>Japoński</item>
+        <item>Jawajski</item>
+        <item>Kannada</item>
+        <item>Kazachski</item>
+        <item>Kambodżański</item>
+        <item>Kinyarwanda</item>
+        <item>Koreański</item>
+        <item>Kurdyjski</item>
+        <item>Kirgiski</item>
+        <item>Laotański</item>
+        <item>Łaciński</item>
+        <item>Łotewski</item>
+        <item>Litewski</item>
+        <item>Luksemburski</item>
+        <item>Macedoński</item>
+        <item>Malgaski</item>
+        <item>Malajski</item>
+        <item>Malajalam</item>
+        <item>Maltański</item>
+        <item>Maoryski</item>
+        <item>Marathi</item>
+        <item>Mongolski</item>
+        <item>Myanma (birmański)</item>
+        <item>Nepalski</item>
+        <item>Norweski</item>
+        <item>Nyanja (Chichewa)</item>
+        <item>Odia (orija)</item>
+        <item>Paszto</item>
+        <item>Perski</item>
+        <item>Polski</item>
+        <item>Portugalski (Portugalia, Brazylia)</item>
+        <item>Pendżabski</item>
+        <item>Rumuński</item>
+        <item>Rosyjski</item>
+        <item>Samoański</item>
+        <item>Gaelicki Szkocki</item>
+        <item>Serbski</item>
+        <item>Sesotho</item>
+        <item>Shona</item>
+        <item>Sindhi</item>
+        <item>Syngaleski</item>
+        <item>Słowacki</item>
+        <item>Słoweński</item>
+        <item>Somalijski</item>
+        <item>Hiszpański</item>
+        <item>Sundajski</item>
+        <item>Kisuahili</item>
+        <item>Szwedzki</item>
+        <item>Tagalski (Filipiński)</item>
+        <item>Tadżycki</item>
+        <item>Tamilski</item>
+        <item>Tatarski</item>
+        <item>Telugu</item>
+        <item>Tajski</item>
+        <item>Turecki</item>
+        <item>Turkmeński</item>
+        <item>Ukraiński</item>
+        <item>Urdu</item>
+        <item>Ujgurski</item>
+        <item>Uzbecki</item>
+        <item>Wietnamski</item>
+        <item>Walijski</item>
+        <item>Xhosa</item>
+        <item>Jidysz</item>
+        <item>Joruba</item>
+        <item>Zuluski</item>
+    </string-array>
+</resources>

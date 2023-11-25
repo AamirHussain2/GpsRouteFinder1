@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Tìm Đường GPS</string>
+    <string name="app_id">ca-app-pub-3940256099942544~3347511713</string>
+    <string name="banner_ad_unit_id">ca-app-pub-3940256099942544/6300978111</string>
+
+    <string name="gps">GPS</string>
+    <string name="setting">Cài Đặt</string>
+    <string name="exploreNearby">Khám Phá Xung Quanh</string>
+    <string name="navigationTools">Công Cụ Định Hướng</string>
+    <string name="translate">Dịch</string>
+    <string name="translator">Bộ Dịch</string>
+    <string name="compass">La Bàn</string>
+    <string name="speedometer">Đồng Hồ Đo Tốc Độ</string>
+    <string name="world_clock">Đồng Hồ Thế Giới</string>
+    <string name="date_calculator">Máy Tính Ngày</string>
+    <string name="select_language">Chọn Ngôn Ngữ</string>
+    <string name="english">Tiếng Anh</string>
+    <string name="urdu">Tiếng Urdu</string>
+    <!-- TODO: Loại bỏ hoặc thay đổi văn bản ghi chú này -->
+    <string name="hello_blank_fragment">Xin chào màn hình trắng</string>
+    <string name="traffic_alerts">Cảnh Báo Giao Thông</string>
+    <string name="street_view">Xem Đường Phố</string>
+    <string name="satellite_map">Bản Đồ Vệ Tinh</string>
+    <string name="live_map">Bản Đồ Trực Tuyến</string>
+    <string name="figure_not_found">Không Tìm Thấy Hình Ảnh</string>
+    <string name="time_with_in">Thời Gian Trong</string>
+    <string name="reset">Thiết Lập Lại</string>
+    <string name="share">Chia Sẻ</string>
+    <string name="seconds">Giây</string>
+    <string name="minutes">Phút</string>
+    <string name="hours">Giờ</string>
+    <string name="days">Ngày</string>
+    <string name="weeks">Tuần</string>
+    <string name="weekends">Cuối Tuần</string>
+    <string name="business_days">Ngày Làm Việc</string>
+    <string name="calculate">Tính Toán</string>
+    <string name="start_date">Ngày Bắt Đầu</string>
+    <string name="end_date">Ngày Kết Thúc</string>
+    <string name="xyz">xyz</string>
+    <string name="find_route">Tìm Đường</string>
+    <string name="starting">Bắt Đầu</string>
+    <string name="my_location">Vị Trí Của Tôi</string>
+    <string name="number_locator">Tìm Số Điện Thoại</string>
+    <string name="voice_navigation">Điều Hướng Bằng Giọng Nói</string>
+    <string name="weather">Thời Tiết</string>
+    <string name="nearby_places">Địa Điểm Xung Quanh</string>
+    <string name="navigation_tools">Công Cụ Định Hướng</string>
+    <string name="destination">Điểm Đến</string>
+    <string name="find_out_people">Tìm Người Bạn Quan Tâm Bằng Số Điện Thoại</string>
+    <string name="enter_phone_number">Nhập Số Điện Thoại</string>
+    <string name="find_location">Tìm Vị Trí</string>
+    <string name="navigation">Định Hướng</string>
+    <string name="feedback">Phản Hồi</string>
+    <string name="privacy_policy">Chính Sách Bảo Mật</string>
+    <string name="start">Bắt Đầu</string>
+    <string name="enter_or_paste_your_text">Nhập hoặc Dán Văn Bản Của Bạn</string>
+
+    <string-array name="search_language">
+        <item>Afrikaans</item>
+        <item>Albanian</item>
+        <item>Amharic</item>
+        <item>Ả Rập</item>
+        <item>Armenian</item>
+        <item>Azerbaijani</item>
+        <item>Basque</item>
+        <item>Belarusian</item>
+        <item>Bengali</item>
+        <item>Bosnian</item>
+        <item>Bulgarian</item>
+        <item>Trung Quốc (Giản Thể)</item>
+        <item>Trung Quốc (Phồn Thể)</item>
+        <item>Corsican</item>
+        <item>Croatian</item>
+        <item>Czech</item>
+        <item>Danish</item>
+        <item>Dutch</item>
+        <item>English</item>
+        <item>Esperanto</item>
+        <item>Estonian</item>
+        <item>Finnish</item>
+        <item>French</item>
+        <item>Frisian</item>
+        <item>Galician</item>
+        <item>Georgian</item>
+        <item>German</item>
+        <item>Greek</item>
+        <item>Gujarati</item>
+        <item>Haitian Creole</item>
+        <item>Hausa</item>
+        <item>Hawaiian</item>
+        <item>Hebrew</item>
+        <item>Hindi</item>
+        <item>Hmong</item>
+        <item>Hungarian</item>
+        <item>Icelandic</item>
+        <item>Igbo</item>
+        <item>Indonesian</item>
+        <item>Irish</item>
+        <item>Italian</item>
+        <item>Japanese</item>
+        <item>Javanese</item>
+        <item>Kannada</item>
+        <item>Kazakh</item>
+        <item>Khmer</item>
+        <item>Kinyarwanda</item>
+        <item>Korean</item>
+        <item>Kurdish</item>
+        <item>Kyrgyz</item>
+        <item>Lao</item>
+        <item>Latin</item>
+        <item>Latvian</item>
+        <item>Lithuanian</item>
+        <item>Luxembourgish</item>
+        <item>Macedonian</item>
+        <item>Malagasy</item>
+        <item>Malay</item>
+        <item>Malayalam</item>
+        <item>Maltese</item>
+        <item>Maori</item>
+        <item>Marathi</item>
+        <item>Mongolian</item>
+        <item>Myanmar (Burmese)</item>
+        <item>Nepali</item>
+        <item>Norwegian</item>
+        <item>Nyanja (Chichewa)</item>
+        <item>Odia (Oriya)</item>
+        <item>Pashto</item>
+        <item>Persian</item>
+        <item>Polish</item>
+        <item>Portuguese (Bồ Đào Nha, Brazil)</item>
+        <item>Punjabi</item>
+        <item>Romanian</item>
+        <item>Russian</item>
+        <item>Samoan</item>
+        <item>Scots Gaelic</item>
+        <item>Serbian</item>
+        <item>Sesotho</item>
+        <item>Shona</item>
+        <item>Sindhi</item>
+        <item>Sinhala (Sinhalese)</item>
+        <item>Slovak</item>
+        <item>Slovenian</item>
+        <item>Somali</item>
+        <item>Tiếng Tây Ban Nha</item>
+        <item>Sundanese</item>
+        <item>Swahili</item>
+        <item>Swedish</item>
+        <item>Tagalog (Filipino)</item>
+        <item>Tajik</item>
+        <item>Tamil</item>
+        <item>Tatar</item>
+        <item>Telugu</item>
+        <item>Thai</item>
+        <item>Turkish</item>
+        <item>Turkmen</item>
+        <item>Ukrainian</item>
+        <item>Urdu</item>
+        <item>Uyghur</item>
+        <item>Uzbek</item>
+        <item>Vietnamese</item>
+        <item>Welsh</item>
+        <item>Xhosa</item>
+        <item>Yiddish</item>
+        <item>Yoruba</item>
+        <item>Zulu</item>
+    </string-array>
+</resources>

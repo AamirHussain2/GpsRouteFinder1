@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.DateCalculator">
+
+    <include
+        android:id="@+id/action_bar"
+        layout="@layout/action_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintTop_toBottomOf="@+id/action_bar"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_margin="@dimen/_10sdp">
+
+            <LinearLayout
+                android:id="@+id/linearLayout1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingVertical="@dimen/_10sdp">
+
+                <TextView
+                    android:id="@+id/timeWithIn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/time_with_in"
+                    android:layout_weight="1"
+                    android:visibility="gone"/>
+
+                <TextView
+                    android:id="@+id/startDateTv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/start_date"
+                    android:layout_weight="1"/>
+
+                <TextView
+                    android:id="@+id/endDateTv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:layout_weight="1"
+                    android:text="@string/end_date"
+                    android:textSize="@dimen/_12sdp"
+                    tools:ignore="TextSizeCheck" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/startDate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_custom"
+                    android:backgroundTint="@color/colorStarting"
+                    android:hint="DD/MM/YY"
+                    android:textColor="@color/black"
+                    android:layout_weight="1"
+                    android:layout_marginEnd="@dimen/_3sdp"
+                    android:textAllCaps="false"
+                    android:drawableEnd="@drawable/date_calculate_icon"
+                    android:paddingEnd="@dimen/_5sdp"
+                    android:textSize="@dimen/_15sdp" />
+
+                <View
+                    android:id="@+id/viewDash"
+                    android:layout_width="@dimen/_10sdp"
+                    android:layout_height="@dimen/_2sdp"
+                    android:background="@color/colorStarting"
+                    android:layout_gravity="center_vertical"
+                    android:visibility="invisible"/>
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/endDate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_custom"
+                    android:backgroundTint="@color/colorStarting"
+                    android:hint="DD/MM/YY"
+                    android:layout_weight="1"
+                    android:textColor="@color/black"
+                    android:layout_marginStart="@dimen/_3sdp"
+                    android:drawableEnd="@drawable/date_calculate_icon"
+                    android:paddingEnd="@dimen/_5sdp"
+                    android:textAllCaps="false"
+                    android:textSize="@dimen/_15sdp"
+                    />
+
+            </LinearLayout>
+
+            <FrameLayout
+                android:id="@+id/flcontainer"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/_5sdp">
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/calculate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_custom"
+                    android:text="@string/calculate"
+                    android:textColor="@color/white"
+                    android:backgroundTint="@color/colorPrimary"
+                    android:textAllCaps="false"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:textSize="@dimen/_15sdp" />
+
+            </FrameLayout>
+
+        </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

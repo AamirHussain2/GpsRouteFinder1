@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">الباحث عن مسار GPS</string>
+    <string name="app_id">ca-app-pub-3940256099942544~3347511713</string>
+    <string name="banner_ad_unit_id">ca-app-pub-3940256099942544/6300978111</string>
+
+    <string name="gps">نظام تحديد المواقع GPS</string>
+    <string name="setting">الإعدادات</string>
+    <string name="exploreNearby">استكشاف القرب</string>
+    <string name="navigationTools">أدوات الملاحة</string>
+    <string name="translate">ترجمة</string>
+    <string name="translator">مترجم</string>
+    <string name="compass">بوصلة</string>
+    <string name="speedometer">عداد السرعة</string>
+    <string name="world_clock">ساعة العالم</string>
+    <string name="date_calculator">آلة حساب التاريخ</string>
+    <string name="select_language">اختر اللغة</string>
+    <string name="english">الإنجليزية</string>
+    <string name="urdu">الأوردو</string>
+    <!-- TODO: إزالة أو تغيير هذا النص البديل -->
+    <string name="hello_blank_fragment">مرحبًا بك في الشاشة الفارغة</string>
+    <string name="traffic_alerts">تنبيهات حركة المرور</string>
+    <string name="street_view">عرض الشارع</string>
+    <string name="satellite_map">خريطة الأقمار الصناعية</string>
+    <string name="live_map">خريطة مباشرة</string>
+    <string name="figure_not_found">الشكل غير موجود</string>
+    <string name="time_with_in">الزمن في</string>
+    <string name="reset">إعادة تعيين</string>
+    <string name="share">مشاركة</string>
+    <string name="seconds">ثواني</string>
+    <string name="minutes">دقائق</string>
+    <string name="hours">ساعات</string>
+    <string name="days">أيام</string>
+    <string name="weeks">أسابيع</string>
+    <string name="weekends">عطل نهاية الأسبوع</string>
+    <string name="business_days">أيام عمل</string>
+    <string name="calculate">احتساب</string>
+    <string name="start_date">تاريخ البدء</string>
+    <string name="end_date">تاريخ الانتهاء</string>
+    <string name="xyz">إكس واي زد</string>
+    <string name="find_route">العثور على مسار</string>
+    <string name="starting">البدء</string>
+    <string name="my_location">موقعي</string>
+    <string name="number_locator">محدد الأرقام</string>
+    <string name="voice_navigation">الملاحة الصوتية</string>
+    <string name="weather">الطقس</string>
+    <string name="nearby_places">الأماكن القريبة</string>
+    <string name="navigation_tools">أدوات الملاحة</string>
+    <string name="destination">الوجهة</string>
+    <string name="find_out_people">اكتشاف الأشخاص الذين تهتم بهم عبر رقم الهاتف</string>
+    <string name="enter_phone_number">أدخل رقم الهاتف</string>
+    <string name="find_location">البحث عن الموقع</string>
+    <string name="navigation">الملاحة</string>
+    <string name="feedback">تقييم المستخدمين</string>
+    <string name="privacy_policy">سياسة الخصوصية</string>
+    <string name="start">بدء</string>
+    <string name="enter_or_paste_your_text">أدخل أو الصق نصك</string>
+
+    <string-array name="search_language">
+        <item>الأفريكانية</item>
+        <item>الألبانية</item>
+        <item>الأمهرية</item>
+        <item>العربية</item>
+        <item>الأرمينية</item>
+        <item>الأذربيجانية</item>
+        <item>الباسكية</item>
+        <item>البيلاروسية</item>
+        <item>البنغالية</item>
+        <item>البوسنية</item>
+        <item>البلغارية</item>
+        <item>الصينية (المبسطة)</item>
+        <item>الصينية (التقليدية)</item>
+        <item>الكورسيكية</item>
+        <item>الكرواتية</item>
+        <item>التشيكية</item>
+        <item>الدنماركية</item>
+        <item>الهولندية</item>
+        <item>الإنجليزية</item>
+        <item>الإسبرانتو</item>
+        <item>الإستونية</item>
+        <item>الفنلندية</item>
+        <item>الفرنسية</item>
+        <item>الفريزية</item>
+        <item>الجاليكية</item>
+        <item>الجورجية</item>
+        <item>الألمانية</item>
+        <item>اليونانية</item>
+        <item>الجوجاراتية</item>
+        <item>الكريول الهايتي</item>
+        <item>الهوسا</item>
+        <item>الهاواي</item>
+        <item>العبرية</item>
+        <item>الهندية</item>
+        <item>الهمونغ</item>
+        <item>الهنغارية</item>
+        <item>الآيسلندية</item>
+        <item>الإيجبو</item>
+        <item>الإندونيسية</item>
+        <item>الإيرلندية</item>
+        <item>الإيطالية</item>
+        <item>اليابانية</item>
+        <item>الجاوي</item>
+        <item>الكانادية</item>
+        <item>الكازاخية</item>
+        <item>الخميرية</item>
+        <item>الكينيارواندا</item>
+        <item>الكورية</item>
+        <item>الكردية</item>
+        <item>القيرغيزية</item>
+        <item>اللاوسية</item>
+        <item>اللاتينية</item>
+        <item>اللاتفية</item>
+        <item>الليتوانية</item>
+        <item>اللوكسمبورجية</item>
+        <item>المقدونية</item>
+        <item>الملغاشية</item>
+        <item>الماليزية</item>
+        <item>المالايالامية</item>
+        <item>المالتية</item>
+        <item>الماورية</item>
+        <item>الماراثية</item>
+        <item>المنغولية</item>
+        <item>بورما (البورمي)</item>
+        <item>النيبالية</item>
+        <item>النرويجية</item>
+        <item>النيانجا (الشيشيوا)</item>
+        <item>الأودية (الأوريا)</item>
+        <item>البشتو</item>
+        <item>الفارسية</item>
+        <item>البولندية</item>
+        <item>البرتغالية (البرتغال، البرازيل)</item>
+        <item>البنجابية</item>
+        <item>الرومانية</item>
+        <item>الروسية</item>
+        <item>الساموية</item>
+        <item>الجيليكية الاسكتلندية</item>
+        <item>الصربية</item>
+        <item>السيسوثو</item>
+        <item>الشونا</item>
+        <item>السندية</item>
+        <item>السينهالية (السنهالية)</item>
+        <item>السلوفاكية</item>
+        <item>السلوفينية</item>
+        <item>الصومالية</item>
+        <item>الإسبانية</item>
+        <item>السوندي</item>
+        <item>السواحيلية</item>
+        <item>السويدية</item>
+        <item>تاغالوغ (الفلبينية)</item>
+        <item>الطاجيكية</item>
+        <item>التاميلية</item>
+        <item>التتار</item>
+        <item>التيلجو</item>
+        <item>التايلاندية</item>
+        <item>التركية</item>
+        <item>التركمانية</item>
+        <item>الأوكرانية</item>
+        <item>الأردية</item>
+        <item>الأويغورية</item>
+        <item>الأوزبكية</item>
+        <item>الفيتنامية</item>
+        <item>الويلزية</item>
+        <item>الزولو</item>
+        <item>اليديش</item>
+        <item>اليوروبا</item>
+    </string-array>
+</resources>

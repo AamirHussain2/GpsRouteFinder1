@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">GPS Route Finder</string>
+    <string name="app_id">ca-app-pub-3940256099942544~3347511713</string>
+    <string name="banner_ad_unit_id">ca-app-pub-3940256099942544/6300978111</string>
+
+    <string name="gps">GPS</string>
+    <string name="setting">Settings</string>
+    <string name="exploreNearby">Explore Nearby</string>
+    <string name="navigationTools">Navigation Tools</string>
+    <string name="translate">Translate</string>
+    <string name="translator">Translator</string>
+    <string name="compass">Compass</string>
+    <string name="speedometer">Speedometer</string>
+    <string name="world_clock">World Clock</string>
+    <string name="date_calculator">Date Calculator</string>
+    <string name="select_language">Select Language</string>
+    <string name="english">English</string>
+    <string name="urdu">Urdu</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="traffic_alerts">Traffic Alerts</string>
+    <string name="street_view">Street View</string>
+    <string name="satellite_map">Satellite Map</string>
+    <string name="live_map">Live Map</string>
+    <string name="figure_not_found">figure not found</string>
+    <string name="time_with_in">Time with in</string>
+    <string name="reset">Reset</string>
+    <string name="share">Share</string>
+    <string name="seconds">Seconds</string>
+    <string name="minutes">Minutes</string>
+    <string name="hours">Hours</string>
+    <string name="days">Days</string>
+    <string name="weeks">Weeks</string>
+    <string name="weekends">Weekends</string>
+    <string name="business_days">Business Days</string>
+    <string name="calculate">Calculate</string>
+    <string name="start_date">Start Date</string>
+    <string name="end_date">End Date</string>
+    <string name="xyz">xyz</string>
+    <string name="find_route">Find Route</string>
+    <string name="starting">Starting</string>
+    <string name="my_location">My Location</string>
+    <string name="number_locator">Number Locator</string>
+    <string name="voice_navig_ation">Voice Navig ation</string>
+    <string name="weather">Weather</string>
+    <string name="nearby_places">Nearby Places</string>
+    <string name="navigation_tools">Navigation Tools</string>
+    <string name="destination">Destination</string>
+    <string name="find_out_people">Find out people you care about by phone number</string>
+    <string name="enter_phone_number">Enter Phone Number</string>
+    <string name="find_location">Find Location</string>
+    <string name="navigation">Navigation</string>
+    <string name="feedback">Feedback</string>
+    <string name="privacy_policy">privacy policy</string>
+    <string name="start">Start</string>
+    <string name="enter_or_paste_your_text">Enter or paste your text</string>
+
+    <string-array name="search_language">
+        <item>Afrikaans</item>
+        <item>Albanian</item>
+        <item>Amharic</item>
+        <item>Arabic</item>
+        <item>Armenian</item>
+        <item>Azerbaijani</item>
+        <item>Basque</item>
+        <item>Belarusian</item>
+        <item>Bengali</item>
+        <item>Bosnian</item>
+        <item>Bulgarian</item>
+        <item>Chinese (Simplified)</item>
+        <item>Chinese (Traditional)</item>
+        <item>Corsican</item>
+        <item>Croatian</item>
+        <item>Czech</item>
+        <item>Danish</item>
+        <item>Dutch</item>
+        <item>English</item>
+        <item>Esperanto</item>
+        <item>Estonian</item>
+        <item>Finnish</item>
+        <item>French</item>
+        <item>Frisian</item>
+        <item>Galician</item>
+        <item>Georgian</item>
+        <item>German</item>
+        <item>Greek</item>
+        <item>Gujarati</item>
+        <item>Haitian Creole</item>
+        <item>Hausa</item>
+        <item>Hawaiian</item>
+        <item>Hebrew</item>
+        <item>Hindi</item>
+        <item>Hmong</item>
+        <item>Hungarian</item>
+        <item>Icelandic</item>
+        <item>Igbo</item>
+        <item>Indonesian</item>
+        <item>Irish</item>
+        <item>Italian</item>
+        <item>Japanese</item>
+        <item>Javanese</item>
+        <item>Kannada</item>
+        <item>Kazakh</item>
+        <item>Khmer</item>
+        <item>Kinyarwanda</item>
+        <item>Korean</item>
+        <item>Kurdish</item>
+        <item>Kyrgyz</item>
+        <item>Lao</item>
+        <item>Latin</item>
+        <item>Latvian</item>
+        <item>Lithuanian</item>
+        <item>Luxembourgish</item>
+        <item>Macedonian</item>
+        <item>Malagasy</item>
+        <item>Malay</item>
+        <item>Malayalam</item>
+        <item>Maltese</item>
+        <item>Maori</item>
+        <item>Marathi</item>
+        <item>Mongolian</item>
+        <item>Myanmar (Burmese)</item>
+        <item>Nepali</item>
+        <item>Norwegian</item>
+        <item>Nyanja (Chichewa)</item>
+        <item>Odia (Oriya)</item>
+        <item>Pashto</item>
+        <item>Persian</item>
+        <item>Polish</item>
+        <item>Portuguese (Portugal, Brazil)</item>
+        <item>Punjabi</item>
+        <item>Romanian</item>
+        <item>Russian</item>
+        <item>Samoan</item>
+        <item>Scots Gaelic</item>
+        <item>Serbian</item>
+        <item>Sesotho</item>
+        <item>Shona</item>
+        <item>Sindhi</item>
+        <item>Sinhala (Sinhalese)</item>
+        <item>Slovak</item>
+        <item>Slovenian</item>
+        <item>Somali</item>
+        <item>Spanish</item>
+        <item>Sundanese</item>
+        <item>Swahili</item>
+        <item>Swedish</item>
+        <item>Tagalog (Filipino)</item>
+        <item>Tajik</item>
+        <item>Tamil</item>
+        <item>Tatar</item>
+        <item>Telugu</item>
+        <item>Thai</item>
+        <item>Turkish</item>
+        <item>Turkmen</item>
+        <item>Ukrainian</item>
+        <item>Urdu</item>
+        <item>Uyghur</item>
+        <item>Uzbek</item>
+        <item>Vietnamese</item>
+        <item>Welsh</item>
+        <item>Xhosa</item>
+        <item>Yiddish</item>
+        <item>Yoruba</item>
+        <item>Zulu</item>
+    </string-array>
+</resources>

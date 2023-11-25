@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">GPS Rota Bulucu</string>
+    <string name="app_id">ca-app-pub-3940256099942544~3347511713</string>
+    <string name="banner_ad_unit_id">ca-app-pub-3940256099942544/6300978111</string>
+
+    <string name="gps">GPS</string>
+    <string name="setting">Ayarlar</string>
+    <string name="exploreNearby">Yakını Keşfet</string>
+    <string name="navigationTools">Navigasyon Araçları</string>
+    <string name="translate">Çevir</string>
+    <string name="translator">Çevirmen</string>
+    <string name="compass">Pusula</string>
+    <string name="speedometer">Hız Göstergesi</string>
+    <string name="world_clock">Dünya Saatleri</string>
+    <string name="date_calculator">Tarih Hesaplayıcı</string>
+    <string name="select_language">Dil Seç</string>
+    <string name="english">İngilizce</string>
+    <string name="urdu">Urduca</string>
+    <string name="hello_blank_fragment">Merhaba boş parça</string>
+    <string name="traffic_alerts">Trafik Uyarıları</string>
+    <string name="street_view">Sokak Görünümü</string>
+    <string name="satellite_map">Uydu Haritası</string>
+    <string name="live_map">Canlı Harita</string>
+    <string name="figure_not_found">Şekil bulunamadı</string>
+    <string name="time_with_in">Zaman içinde</string>
+    <string name="reset">Sıfırla</string>
+    <string name="share">Paylaş</string>
+    <string name="seconds">Saniyeler</string>
+    <string name="minutes">Dakikalar</string>
+    <string name="hours">Saatler</string>
+    <string name="days">Günler</string>
+    <string name="weeks">Haftalar</string>
+    <string name="weekends">Haftasonları</string>
+    <string name="business_days">İş Günleri</string>
+    <string name="calculate">Hesapla</string>
+    <string name="start_date">Başlangıç Tarihi</string>
+    <string name="end_date">Bitiş Tarihi</string>
+    <string name="xyz">xyz</string>
+    <string name="find_route">Rota Bul</string>
+    <string name="starting">Başlangıç</string>
+    <string name="my_location">Benim Konumum</string>
+    <string name="number_locator">Numara Bulucu</string>
+    <string name="voice_navigation">Sesli Navig asyon</string>
+    <string name="weather">Hava Durumu</string>
+    <string name="nearby_places">Yakındaki Yerler</string>
+    <string name="navigation_tools">Navigasyon Araçları</string>
+    <string name="destination">Hedef</string>
+    <string name="find_out_people">Önem verdiğiniz kişileri telefon numarasıyla bulun</string>
+    <string name="enter_phone_number">Telefon Numarasını Girin</string>
+    <string name="find_location">Konum Bul</string>
+    <string name="navigation">Navigasyon</string>
+    <string name="feedback">Geribildirim</string>
+    <string name="privacy_policy">Gizlilik Politikası</string>
+    <string name="start">Başla</string>
+    <string name="enter_or_paste_your_text">Metni Girin veya Yapıştırın</string>
+
+    <string-array name="search_language">
+        <item>Afrikaanca</item>
+        <item>Arnavutça</item>
+        <item>Amharca</item>
+        <item>Arapça</item>
+        <item>Ermenice</item>
+        <item>Azerice</item>
+        <item>Baskça</item>
+        <item>Belarusça</item>
+        <item>Bengalce</item>
+        <item>Bosna dili</item>
+        <item>Bulgarca</item>
+        <item>Çince (Basit)</item>
+        <item>Çince (Geleneksel)</item>
+        <item>Korsikaca</item>
+        <item>Hırvatça</item>
+        <item>Çekçe</item>
+        <item>Danca</item>
+        <item>Flemenkçe</item>
+        <item>İngilizce</item>
+        <item>Esperanto</item>
+        <item>Estonyaca</item>
+        <item>Fince</item>
+        <item>Fransızca</item>
+        <item>Frisyaca</item>
+        <item>Galce</item>
+        <item>Gürcüce</item>
+        <item>Almanca</item>
+        <item>Yunanca</item>
+        <item>Guceratca</item>
+        <item>Haiti Kreol dili</item>
+        <item>Hausa dili</item>
+        <item>Hawaii dili</item>
+        <item>İbranice</item>
+        <item>Hintçe</item>
+        <item>Hmongca</item>
+        <item>Macarca</item>
+        <item>İzlandaca</item>
+        <item>Igbo dili</item>
+        <item>Endonezce</item>
+        <item>İrlandaca</item>
+        <item>İtalyanca</item>
+        <item>Japonca</item>
+        <item>Cava dili</item>
+        <item>Kannada dili</item>
+        <item>Kazakça</item>
+        <item>Khmerce</item>
+        <item>Kinyarwanda dili</item>
+        <item>Korece</item>
+        <item>Kürtçe</item>
+        <item>Kırgızca</item>
+        <item>Laoca</item>
+        <item>Latince</item>
+        <item>Letonca</item>
+        <item>Lehçe</item>
+        <item>Lüksemburgca</item>
+        <item>Makedonca</item>
+        <item>Malgaşça</item>
+        <item>Malayca</item>
+        <item>Malayalamca</item>
+        <item>Maltese</item>
+        <item>Maori dili</item>
+        <item>Marathice</item>
+        <item>Moğolca</item>
+        <item>Myanmarca (Burmaca)</item>
+        <item>Nepalce</item>
+        <item>Norveççe</item>
+        <item>Nyanja (Chichewa)</item>
+        <item>Odia (Oriya)</item>
+        <item>Peştuca</item>
+        <item>Farsça</item>
+        <item>Lehçe</item>
+        <item>Portekizce (Portekiz, Brezilya)</item>
+        <item>Pencapça</item>
+        <item>Rumence</item>
+        <item>Rusça</item>
+        <item>Samoanca</item>
+        <item>İskoç Gaelic dili</item>
+        <item>Sırpça</item>
+        <item>Sesothoca</item>
+        <item>Shonaca</item>
+        <item>Sindhi dili</item>
+        <item>Sinhala (Sinhalese)</item>
+        <item>Slovakça</item>
+        <item>Slovenyaca</item>
+        <item>Somalice</item>
+        <item>İspanyolca</item>
+        <item>Sundanca</item>
+        <item>Swahilice</item>
+        <item>İsveççe</item>
+        <item>Tagalog (Filipin dili)</item>
+        <item>Tacikce</item>
+        <item>Tamilce</item>
+        <item>Tatarca</item>
+        <item>Telugu dili</item>
+        <item>Tayca</item>
+        <item>Türkçe</item>
+        <item>Türkmence</item>
+        <item>Ukraynaca</item>
+        <item>Urduca</item>
+        <item>Uygurca</item>
+        <item>Özbekçe</item>
+        <item>Vietnamca</item>
+        <item>Galce</item>
+        <item>Xhosaca</item>
+        <item>Yidiş</item>
+        <item>Yorubaca</item>
+        <item>Zuluca</item>
+    </string-array>
+</resources>

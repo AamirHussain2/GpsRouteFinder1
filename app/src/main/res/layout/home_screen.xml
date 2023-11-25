@@ -1,0 +1,380 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/windowBackground"
+    tools:context=".activities.HomeScreen">
+
+    <include
+        android:id="@+id/action_bar"
+        layout="@layout/action_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+  <androidx.cardview.widget.CardView
+      android:id="@+id/cardView"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      app:cardCornerRadius="@dimen/_5sdp"
+      android:layout_marginHorizontal="@dimen/_10sdp"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/action_bar">
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:orientation="vertical"
+          android:padding="@dimen/_10sdp">
+
+          <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+
+              <androidx.appcompat.widget.AppCompatButton
+                  android:id="@+id/starting"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_weight="1"
+                  android:background="@drawable/bg_custom"
+                  android:backgroundTint="@color/colorStarting"
+                  android:drawableStart="@drawable/loc_btn_icon"
+                  android:paddingHorizontal="@dimen/_10sdp"
+                  android:textSize="@dimen/_15sdp"
+                  android:layout_marginEnd="@dimen/_3sdp"
+                  android:text="@string/starting"
+                  android:textAllCaps="false" />
+
+              <View
+                  android:layout_width="@dimen/_15sdp"
+                  android:layout_height="@dimen/_2sdp"
+                  android:background="@color/colorPrimary"
+                  android:layout_gravity="center_vertical"/>
+
+              <androidx.appcompat.widget.AppCompatButton
+                  android:id="@+id/destination"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:background="@drawable/bg_custom"
+                  android:backgroundTint="@color/colorStarting"
+                  android:text="@string/destination"
+                  android:textAllCaps="false"
+                  android:layout_weight="1"
+                  android:paddingHorizontal="@dimen/_10sdp"
+                  android:layout_marginStart="@dimen/_3sdp"
+                  android:textSize="@dimen/_15sdp"
+                  android:drawableStart="@drawable/des_btn_icon"
+                 />
+
+          </LinearLayout>
+
+          <com.google.android.material.button.MaterialButton
+              android:id="@+id/findRoute"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              app:cornerRadius="@dimen/_3sdp"
+              android:padding="@dimen/_7sdp"
+              android:text="@string/find_route"
+              android:backgroundTint="@color/colorPrimary"
+              android:textAllCaps="false"
+              android:layout_marginTop="@dimen/_5sdp"
+              android:textSize="@dimen/_15sdp"
+              />
+      </LinearLayout>
+
+  </androidx.cardview.widget.CardView>
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      app:layout_constraintTop_toBottomOf="@+id/cardView"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      android:layout_marginHorizontal="@dimen/_10sdp"
+      android:orientation="vertical">
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:orientation="horizontal"
+          android:weightSum="2"
+          android:paddingVertical="@dimen/_15sdp"
+          >
+
+          <androidx.cardview.widget.CardView
+              android:id="@+id/myLocation"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              app:cardCornerRadius="@dimen/_5sdp"
+              android:layout_weight="1"
+              android:layout_marginEnd="@dimen/_5sdp">
+
+              <LinearLayout
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:orientation="vertical"
+                  android:layout_gravity="center_horizontal"
+                  android:padding="@dimen/_10sdp"
+                  >
+
+                  <ImageView
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:src="@drawable/my_location"
+                      android:layout_gravity="center_horizontal" />
+
+                  <TextView
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:text="@string/my_location"
+                      android:textSize="@dimen/_10sdp"
+                      android:layout_marginTop="@dimen/_5sdp"
+                      android:layout_gravity="center_horizontal"/>
+
+              </LinearLayout>
+
+          </androidx.cardview.widget.CardView>
+
+          <androidx.cardview.widget.CardView
+              android:id="@+id/numberLocator"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              app:cardCornerRadius="@dimen/_5sdp"
+              android:layout_weight="1"
+              >
+
+              <LinearLayout
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:orientation="vertical"
+                  android:layout_gravity="center_horizontal"
+                  android:padding="@dimen/_10sdp">
+
+                  <ImageView
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:src="@drawable/number_locator"
+                      android:layout_gravity="center_horizontal"/>
+
+                  <TextView
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:text="@string/number_locator"
+                      android:textSize="@dimen/_10sdp"
+                      android:layout_marginTop="@dimen/_5sdp"
+                      android:layout_gravity="center_horizontal"/>
+
+              </LinearLayout>
+
+          </androidx.cardview.widget.CardView>
+
+      </LinearLayout>
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:orientation="horizontal"
+          android:weightSum="2">
+
+          <androidx.cardview.widget.CardView
+              android:id="@+id/voiceNavigation"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              app:cardCornerRadius="@dimen/_5sdp"
+              android:layout_weight="1"
+              android:layout_marginEnd="@dimen/_5sdp">
+
+              <LinearLayout
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:orientation="vertical"
+                  android:layout_gravity="center_horizontal"
+                  android:padding="@dimen/_10sdp">
+
+                  <ImageView
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:src="@drawable/voice_navigation_icon"
+                      android:layout_gravity="center_horizontal"/>
+
+                  <TextView
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:text="@string/voice_navigation"
+                      android:textSize="@dimen/_10sdp"
+                      android:layout_marginTop="@dimen/_5sdp"
+                      android:layout_gravity="center_horizontal"/>
+
+              </LinearLayout>
+
+          </androidx.cardview.widget.CardView>
+          <androidx.cardview.widget.CardView
+              android:id="@+id/weather"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              app:cardCornerRadius="@dimen/_5sdp"
+              android:layout_weight="1"
+              >
+
+              <LinearLayout
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:orientation="vertical"
+                  android:layout_gravity="center_horizontal"
+                  android:padding="@dimen/_10sdp">
+
+                  <ImageView
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:src="@drawable/weather"
+                      android:layout_gravity="center_horizontal"/>
+
+                  <TextView
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:text="@string/weather"
+                      android:textSize="@dimen/_10sdp"
+                      android:layout_marginTop="@dimen/_5sdp"
+                      android:layout_gravity="center_horizontal"/>
+
+              </LinearLayout>
+
+          </androidx.cardview.widget.CardView>
+
+      </LinearLayout>
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:orientation="horizontal"
+          android:weightSum="2"
+          android:paddingVertical="@dimen/_15sdp">
+
+          <androidx.cardview.widget.CardView
+              android:id="@+id/nearbyPlaces"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_marginEnd="@dimen/_5sdp"
+              android:layout_weight="1"
+              app:cardCornerRadius="@dimen/_5sdp">
+
+              <LinearLayout
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_gravity="center_horizontal"
+                  android:orientation="vertical"
+                  android:padding="@dimen/_10sdp">
+
+                  <ImageView
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_gravity="center_horizontal"
+                      android:src="@drawable/nearby_places" />
+
+                  <TextView
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_gravity="center_horizontal"
+                      android:layout_marginTop="@dimen/_5sdp"
+                      android:text="@string/nearby_places"
+                      android:textSize="@dimen/_10sdp" />
+
+              </LinearLayout>
+
+          </androidx.cardview.widget.CardView>
+
+          <androidx.cardview.widget.CardView
+              android:id="@+id/liveMap"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              app:cardCornerRadius="@dimen/_5sdp"
+              android:layout_weight="1"
+              >
+
+              <LinearLayout
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:orientation="vertical"
+                  android:layout_gravity="center_horizontal"
+                  android:padding="@dimen/_10sdp">
+
+                  <ImageView
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:src="@drawable/my_location_icon"
+                      android:layout_gravity="center_horizontal"/>
+
+                  <TextView
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:text="@string/live_map"
+                      android:textSize="@dimen/_10sdp"
+                      android:layout_marginTop="@dimen/_5sdp"
+                      android:layout_gravity="center_horizontal"/>
+
+              </LinearLayout>
+
+          </androidx.cardview.widget.CardView>
+
+      </LinearLayout>
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:orientation="horizontal"
+
+          >
+
+          <androidx.cardview.widget.CardView
+              android:id="@+id/navigationTools"
+              android:layout_width="@dimen/_140sdp"
+              android:layout_height="wrap_content"
+              app:cardCornerRadius="@dimen/_5sdp"
+              >
+
+              <LinearLayout
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:orientation="vertical"
+                  android:layout_gravity="center_horizontal"
+                  android:padding="@dimen/_10sdp">
+
+                  <ImageView
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:src="@drawable/navigation_tools_icon"
+                      android:layout_gravity="center_horizontal"/>
+
+                  <TextView
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:text="@string/navigation_tools"
+                      android:textSize="@dimen/_10sdp"
+                      android:layout_marginTop="@dimen/_5sdp"
+                      android:layout_gravity="center_horizontal"/>
+
+              </LinearLayout>
+
+          </androidx.cardview.widget.CardView>
+
+
+      </LinearLayout>
+
+
+  </LinearLayout>
+
+<!--    <com.google.android.gms.ads.AdView-->
+<!--        android:id="@+id/adView"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        app:adSize="BANNER"-->
+<!--        app:adUnitId="@string/banner_ad_unit_id"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent" />-->
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.Translate">
+
+    <include
+        android:id="@+id/action_bar"
+        layout="@layout/action_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/action_bar"
+        android:weightSum="100"
+        android:layout_marginVertical="@dimen/_5sdp"
+        android:layout_marginHorizontal="@dimen/_10sdp">
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:elevation="@dimen/_5sdp"
+            android:background="@drawable/bg_custom"
+            android:backgroundTint="@color/colorStarting"
+            android:weightSum="2"
+            android:layout_weight="50">
+
+<!--                spinner LinearLayout "horizontal"-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="10"
+                    android:padding="@dimen/_7sdp">
+
+                    <TextView
+                        android:id="@+id/languageFrom"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="3"
+                        android:textSize="@dimen/_12sdp"
+                        android:fontFamily="@font/inter_semibold"
+                        android:paddingStart="@dimen/_5sdp"
+                        android:background="@drawable/bg_edittext"
+                        app:drawableEndCompat="@drawable/arrow_drop_down" />
+                    <ImageButton
+                        android:id="@+id/swapBtn"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/rotate"
+                        app:tint="@color/black"
+                        android:layout_weight="4"
+                        android:background="?attr/selectableItemBackgroundBorderless"/>
+
+                    <TextView
+                        android:id="@+id/languageTo"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="3"
+                        android:textSize="@dimen/_12sdp"
+                        android:fontFamily="@font/inter_semibold"
+                        android:paddingStart="@dimen/_5sdp"
+                        android:background="@drawable/bg_edittext"
+                        app:drawableEndCompat="@drawable/arrow_drop_down" />
+
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/editText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:background="@null"
+                    android:cursorVisible="true"
+                    android:gravity="top"
+                    android:hint="@string/enter_or_paste_your_text"
+                    android:paddingStart="@dimen/_7sdp"
+                    android:textCursorDrawable="@color/colorPrimary" />
+
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginHorizontal="@dimen/_5sdp">
+
+                    <ImageButton
+                        android:id="@+id/deleteEditText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/delete"
+                        android:padding="@dimen/_10sdp"
+                        android:background="?attr/selectableItemBackgroundBorderless"/>
+                </LinearLayout>
+
+        </LinearLayout>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/translate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_custom"
+            android:text="@string/translate"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/colorPrimary"
+            android:textAllCaps="false"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:textSize="@dimen/_15sdp"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/bg_custom"
+            android:elevation="@dimen/_5sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:orientation="vertical"
+            android:layout_weight="50">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/_5sdp">
+
+                <ImageButton
+                    android:id="@+id/share"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/share"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:layout_alignParentStart="true"
+                    android:padding="@dimen/_10sdp"/>
+
+                <ImageButton
+                    android:id="@+id/zoomOut"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/zoom_out"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:layout_alignParentEnd="true"
+                    android:padding="@dimen/_10sdp"/>
+
+                <ImageButton
+                    android:id="@+id/copyContent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/content_copy"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:layout_toStartOf="@+id/zoomOut"
+                    android:padding="@dimen/_10sdp"
+                    />
+                <ImageButton
+                    android:id="@+id/deleteTextview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/delete"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:layout_toStartOf="@+id/copyContent"
+                    android:padding="@dimen/_10sdp"
+                    />
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</RelativeLayout>

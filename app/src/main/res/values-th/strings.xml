@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">ค้นหาเส้นทาง GPS</string>
+    <string name="app_id">ca-app-pub-3940256099942544~3347511713</string>
+    <string name="banner_ad_unit_id">ca-app-pub-3940256099942544/6300978111</string>
+
+    <string name="gps">GPS</string>
+    <string name="setting">การตั้งค่า</string>
+    <string name="exploreNearby">สำรวจบริเวณใกล้เคียง</string>
+    <string name="navigationTools">เครื่องมือนำทาง</string>
+    <string name="translate">แปล</string>
+    <string name="translator">ตัวแปล</string>
+    <string name="compass">เข็มทิศ</string>
+    <string name="speedometer">เรขาคณิตเร็ว</string>
+    <string name="world_clock">นาฬิกาโลก</string>
+    <string name="date_calculator">เครื่องคำนวณวันที่</string>
+    <string name="select_language">เลือกภาษา</string>
+    <string name="english">อังกฤษ</string>
+    <string name="urdu">อูรดู</string>
+    <string name="hello_blank_fragment">สวัสดี, ฟรากเมนท์ว่างเปล่า</string>
+    <string name="traffic_alerts">การแจ้งเตือนจราจร</string>
+    <string name="street_view">มุมมองถนน</string>
+    <string name="satellite_map">แผนที่ดาวเทียม</string>
+    <string name="live_map">แผนที่สด</string>
+    <string name="figure_not_found">ไม่พบรูปร่าง</string>
+    <string name="time_with_in">เวลาในช่วง</string>
+    <string name="reset">รีเซ็ต</string>
+    <string name="share">แชร์</string>
+    <string name="seconds">วินาที</string>
+    <string name="minutes">นาที</string>
+    <string name="hours">ชั่วโมง</string>
+    <string name="days">วัน</string>
+    <string name="weeks">สัปดาห์</string>
+    <string name="weekends">วันหยุดสุดสัปดาห์</string>
+    <string name="business_days">วันทำการ</string>
+    <string name="calculate">คำนวณ</string>
+    <string name="start_date">วันที่เริ่มต้น</string>
+    <string name="end_date">วันที่สิ้นสุด</string>
+    <string name="xyz">xyz</string>
+    <string name="find_route">ค้นหาเส้นทาง</string>
+    <string name="starting">เริ่มต้น</string>
+    <string name="my_location">ตำแหน่งของฉัน</string>
+    <string name="number_locator">ตำแหน่งหมายเลข</string>
+    <string name="voice_navigation">การนำทางด้วยเสียง</string>
+    <string name="weather">สภาพอากาศ</string>
+    <string name="nearby_places">สถานที่ใกล้เคียง</string>
+    <string name="navigation_tools">เครื่องมือนำทาง</string>
+    <string name="destination">จุดหมาย</string>
+    <string name="find_out_people">ค้นหาคนที่สำคัญโดยใช้หมายเลขโทรศัพท์</string>
+    <string name="enter_phone_number">ป้อนหมายเลขโทรศัพท์</string>
+    <string name="find_location">ค้นหาตำแหน่ง</string>
+    <string name="navigation">การนำทาง</string>
+    <string name="feedback">ความคิดเห็น</string>
+    <string name="privacy_policy">นโยบายความเป็นส่วนตัว</string>
+    <string name="start">เริ่ม</string>
+    <string name="enter_or_paste_your_text">ป้อนหรือวางข้อความของคุณ</string>
+
+    <string-array name="search_language">
+        <item>แอฟริกาานส์</item>
+        <item>แอลบาเนียน</item>
+        <item>อัมฮาริ</item>
+        <item>อาหรับ</item>
+        <item>อาร์เมเนียน</item>
+        <item>อาเซอร์ไบจาน</item>
+        <item>บัสก์</item>
+        <item>เบลารุส</item>
+        <item>เบงกาลี</item>
+        <item>บอสเนียน</item>
+        <item>บัลแกเรียน</item>
+        <item>จีน (ง่าย)</item>
+        <item>จีน (ดั้งเดิม)</item>
+        <item>คอร์ซิกัน</item>
+        <item>โครเอเชียน</item>
+        <item>เช็ก</item>
+        <item>เดนมาร์ก</item>
+        <item>ดัทช์</item>
+        <item>อังกฤษ</item>
+        <item>เอสเปอรันโต</item>
+        <item>เอสโทเนียน</item>
+        <item>ฟินแลนด์</item>
+        <item>ฝรั่งเศส</item>
+        <item>ฟรีเซียน</item>
+        <item>กาลิเซียน</item>
+        <item>จอร์เจีย</item>
+        <item>เยอรมัน</item>
+        <item>กรีก</item>
+        <item>กูจาราตี</item>
+        <item>ฮายตีครีโอล</item>
+        <item>เจออร์เจียน</item>
+        <item>ฮาวาย</item>
+        <item>ฮิบรู</item>
+        <item>ฮีบรู</item>
+        <item>ฮมอง</item>
+        <item>ฮังการี</item>
+        <item>ไอซ์แลนด์</item>
+        <item>อิกโบ</item>
+        <item>อินโดนีเซียน</item>
+        <item>ไอร์แลนด์</item>
+        <item>อิตาลี</item>
+        <item>ญี่ปุ่น</item>
+        <item>ยาวาน</item>
+        <item>กันนาดา</item>
+        <item>เกาหลี</item>
+        <item>เคิร์ก</item>
+        <item>คีร์กีซ</item>
+        <item>ลาว</item>
+        <item>ละติน</item>
+        <item>ลัตเวีย</item>
+        <item>ลิทัวเนียน</item>
+        <item>ลักเซมเบิร์ก</item>
+        <item>มาเซโดเนีย</item>
+        <item>มาลากาซี</item>
+        <item>มาเลย์</item>
+        <item>มาราธี</item>
+        <item>มองโกล</item>
+        <item>พมี (พมี)</item>
+        <item>เนปาลี</item>
+        <item>นอรเวจิอัน</item>
+        <item>โนรเเวย์</item>
+        <item>นยันฯ (ชิเชวา)</item>
+        <item>โอเดีย (โอริยา)</item>
+        <item>ปาชตู</item>
+        <item>เปอร์เซีย</item>
+        <item>โปรตุเกส (โปรตุเกส, บราซิล)</item>
+        <item>ปัญจาบี</item>
+        <item>โรมาเนียน</item>
+        <item>รัสเซีย</item>
+        <item>ซามัวอัน</item>
+        <item>สกอตติชเกาลิก</item>
+        <item>เซอร์เบียน</item>
+        <item>เซโซโต</item>
+        <item>โชนา</item>
+        <item>ซินด์ฮี</item>
+        <item>ซินซาลี (ซินซาลี)</item>
+        <item>สโลวัค</item>
+        <item>สโลวีเนียน</item>
+        <item>โซมาลี</item>
+        <item>สเปน</item>
+        <item>ซุนดานีส</item>
+        <item>สวาฮีลี</item>
+        <item>สวาฮีลี</item>
+        <item>สวีดิช</item>
+        <item>ตากาล็ก (ฟิลิปปินส์)</item>
+        <item>ทาจิก</item>
+        <item>ทมิล์</item>
+        <item>ทาจิกสถาน</item>
+        <item>ทมิล์</item>
+        <item>ทอจิก</item>
+        <item>ทูรกี</item>
+        <item>ทุร์กเมน</item>
+        <item>อูคราน</item>
+        <item>อุซเบกิส</item>
+        <item>เวียดนาม</item>
+        <item>เวลช์</item>
+        <item>โซซา</item>
+        <item>ยิดดิช</item>
+        <item>โซลู</item>
+    </string-array>
+</resources>

@@ -110,29 +110,26 @@ public class MyLocation extends AppCompatActivity {
         // visible only when Parent FAB button is clicked So
         // we have to handle the Parent FAB button first, by
         // using setOnClickListener you can see below
-        myLocationBinding.fab.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                if (!isAllFabsVisible) {
-                    // when isAllFabsVisible becomes true make all
-                    // the action name texts and FABs VISIBLE
-                    myLocationBinding.fab1.show();
-                    myLocationBinding.fab2.show();
-                    myLocationBinding.fab3.show();
-                    // make the boolean variable true as we
-                    // have set the sub FABs visibility to GONE
-                    isAllFabsVisible = true;
-                } else {
-                    // when isAllFabsVisible becomes true make
-                    // all the action name texts and FABs GONE.
-                    myLocationBinding.fab1.hide();
-                    myLocationBinding.fab2.hide();
-                    myLocationBinding.fab3.hide();
+        myLocationBinding.fab.setOnClickListener(view -> {
+            if (!isAllFabsVisible) {
+                // when isAllFabsVisible becomes true make all
+                // the action name texts and FABs VISIBLE
+                myLocationBinding.fab1.show();
+                myLocationBinding.fab2.show();
+                myLocationBinding.fab3.show();
+                // make the boolean variable true as we
+                // have set the sub FABs visibility to GONE
+                isAllFabsVisible = true;
+            } else {
+                // when isAllFabsVisible becomes true make
+                // all the action name texts and FABs GONE.
+                myLocationBinding.fab1.hide();
+                myLocationBinding.fab2.hide();
+                myLocationBinding.fab3.hide();
 
-                    // make the boolean variable false as we
-                    // have set the sub FABs visibility to GONE
-                    isAllFabsVisible = false;
-                }
+                // make the boolean variable false as we
+                // have set the sub FABs visibility to GONE
+                isAllFabsVisible = false;
             }
         });
 

@@ -29,10 +29,11 @@
 
         </LinearLayout>
 
-        <ListView
-            android:id='@+id/view_list'
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/worldClockBottomSheetRV"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:padding="@dimen/_5sdp"
             />
 
 

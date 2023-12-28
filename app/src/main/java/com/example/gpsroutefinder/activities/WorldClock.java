@@ -2,6 +2,7 @@ package com.example.gpsroutefinder.activities;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import android.os.Bundle;
 import android.text.Editable;
@@ -39,7 +40,7 @@ public class WorldClock extends AppCompatActivity implements CityListCallbackAda
 
     ArrayList<City> selected_cities;
     EditText text;
-    ListView cityList;
+    RecyclerView cityList;
     BottomSheetDialog bottomSheetDialog;
     CityListAdapter adapter;
     ArrayList<Integer> dynamicIntArray = new ArrayList<>();
@@ -72,10 +73,10 @@ public class WorldClock extends AppCompatActivity implements CityListCallbackAda
         View view = getLayoutInflater().inflate(R.layout.bottom_sheet_world_clock, worldClockBinding.getRoot(), false);
         //set view
         bottomSheetDialog.setContentView(view);
-        cityList = view.findViewById(R.id.view_list);
+        cityList = view.findViewById(R.id.worldClockBottomSheetRV);
         text = view.findViewById(R.id.editText);
 
-        adapter = new CityListAdapter(this, R.layout.city_list_item_view, this, cities);
+        adapter = new CityListAdapter(this,this, cities);
         Log.e("tagcity","callBottomDialog: "+cities);
 
         cityList.setAdapter(adapter);

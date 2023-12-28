@@ -1,10 +1,10 @@
 package com.example.gpsroutefinder.models;
 
-public class ModelLanguage {
+public class TranslateRVModel {
 
     String languageCode;
     String languageTitle;
-    public ModelLanguage(String languageCode, String languageTitle) {
+    public TranslateRVModel(String languageCode, String languageTitle) {
         this.languageCode = languageCode;
         this.languageTitle = languageTitle;
     }

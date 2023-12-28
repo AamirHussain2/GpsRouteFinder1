@@ -168,9 +168,11 @@ public class Weather extends AppCompatActivity {
             @SuppressLint({"NotifyDataSetChanged", "SetTextI18n"})
             @Override
             public void onResponse(JSONObject response) {
+                Log.e("onResponse", String.valueOf(response));
                 weatherBinding.idPBLoading.setVisibility(View.GONE);
                 weatherBinding.idRLHome.setVisibility(View.VISIBLE);
                 weatherRVModelArrayList.clear();
+
 
                 try {
                     String temperature = response.getJSONObject("current").getString("temp_c");

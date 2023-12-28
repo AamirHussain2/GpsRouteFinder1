@@ -13,7 +13,7 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.gpsroutefinder.Interface.MyAdapterCallback;
+import com.example.gpsroutefinder.Interface.TranslateCallbackAdapter;
 import com.example.gpsroutefinder.R;
 
 import java.util.ArrayList;
@@ -21,14 +21,14 @@ import java.util.List;
 import java.util.Locale;
 
 
-public class LanguagesRecyclerAdapter extends RecyclerView.Adapter<LanguagesRecyclerAdapter.ViewHolder> implements Filterable {
+public class TranslateRVAdapter extends RecyclerView.Adapter<TranslateRVAdapter.ViewHolder> implements Filterable {
     List<String> originalList;
     Context context;
     Boolean isChecked ;
-    private final MyAdapterCallback callback;
+    private final TranslateCallbackAdapter callback;
     ArrayList<String> filteredArrayList;
 
-    public LanguagesRecyclerAdapter(Context context, List<String> originalList, MyAdapterCallback callback, Boolean isChecked) {
+    public TranslateRVAdapter(Context context, List<String> originalList, TranslateCallbackAdapter callback, Boolean isChecked) {
         this.originalList = originalList;
         this.context = context;
         this.callback = callback;
@@ -50,6 +50,7 @@ public class LanguagesRecyclerAdapter extends RecyclerView.Adapter<LanguagesRecy
 
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, @SuppressLint("RecyclerView") int position) {
+        Log.e("TAG", "onBindViewHolder:position: "+position +": "+originalList.get(position));
 
         holder.textView.setText(originalList.get(position));
 

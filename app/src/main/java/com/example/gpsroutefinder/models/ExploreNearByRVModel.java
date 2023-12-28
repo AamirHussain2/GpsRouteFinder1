@@ -1,11 +1,11 @@
 package com.example.gpsroutefinder.models;
 
-public class ExploreNearByRecyclerModel {
+public class ExploreNearByRVModel {
 
     private final int imageButton;
     private final String textView;
 
-    public ExploreNearByRecyclerModel(int imageButton, String textView) {
+    public ExploreNearByRVModel(int imageButton, String textView) {
         this.imageButton = imageButton;
         this.textView = textView;
     }

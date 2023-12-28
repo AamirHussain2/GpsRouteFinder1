@@ -10,35 +10,32 @@ import android.content.ClipData;
 import android.content.ClipboardManager;
 import android.content.Context;
 import android.content.Intent;
-import android.net.wifi.WifiManager;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.Toast;
 
-import com.example.gpsroutefinder.Interface.MyAdapterCallback;
+import com.example.gpsroutefinder.Interface.TranslateCallbackAdapter;
 import com.example.gpsroutefinder.R;
 import com.example.gpsroutefinder.databinding.TranslateBinding;
-import com.example.gpsroutefinder.models.ModelLanguage;
+import com.example.gpsroutefinder.models.TranslateRVModel;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.android.material.bottomsheet.BottomSheetDialog;
-import com.example.gpsroutefinder.adapters.LanguagesRecyclerAdapter;
+import com.example.gpsroutefinder.adapters.TranslateRVAdapter;
 import com.google.mlkit.common.model.DownloadConditions;
 import com.google.mlkit.nl.translate.TranslateLanguage;
 import com.google.mlkit.nl.translate.Translation;
 import com.google.mlkit.nl.translate.Translator;
 import com.google.mlkit.nl.translate.TranslatorOptions;
 
-import java.lang.reflect.Field;
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.Collections;
 import java.util.List;
 import java.util.Locale;
 
 
-public class Translate extends AppCompatActivity implements MyAdapterCallback {
+public class Translate extends AppCompatActivity implements TranslateCallbackAdapter {
 
     TranslateBinding translateBinding;
     boolean isChecked;
@@ -127,7 +124,7 @@ public class Translate extends AppCompatActivity implements MyAdapterCallback {
             Log.e("MAIN_TAG_languageTitle","loadAvailableLanguage: languageTitle: "+languageTitle);
             Log.e("MAIN_TAG_languageCodeList","loadAvailableLanguage: languageCodeList: "+languageCodeList.size());
 
-            ModelLanguage modelLanguage = new ModelLanguage(languageCode, languageTitle);
+            TranslateRVModel modelLanguage = new TranslateRVModel(languageCode, languageTitle);
 
         }
         TranslatorOptions options =
@@ -196,10 +193,9 @@ public class Translate extends AppCompatActivity implements MyAdapterCallback {
         //Define RecyclerView
          recyclerView = view.findViewById(R.id.languagesRecyclerView);
         //create instance of adapter
-        LanguagesRecyclerAdapter recyclerAdapter = new LanguagesRecyclerAdapter(getApplicationContext(), arrayList,this, isChecked);
+        TranslateRVAdapter recyclerAdapter = new TranslateRVAdapter(getApplicationContext(), arrayList,this, isChecked);
         //set adapter in recyclerView
         recyclerView.setAdapter(recyclerAdapter);
-
 
         SearchView searchLanguage = view.findViewById(R.id.searchLanguage);
 
@@ -239,4 +235,5 @@ public class Translate extends AppCompatActivity implements MyAdapterCallback {
 
         }
     }
+
 }

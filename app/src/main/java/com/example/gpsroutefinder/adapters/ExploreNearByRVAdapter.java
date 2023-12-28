@@ -1,37 +1,32 @@
 package com.example.gpsroutefinder.adapters;
 
-import android.Manifest;
 import android.annotation.SuppressLint;
-import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
-import android.content.pm.PackageManager;
 import android.net.Uri;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
-import androidx.core.app.ActivityCompat;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.gpsroutefinder.R;
-import com.example.gpsroutefinder.models.ExploreNearByRecyclerModel;
+import com.example.gpsroutefinder.models.ExploreNearByRVModel;
 import com.google.android.gms.maps.model.LatLng;
 
 import java.util.ArrayList;
 
-public class ExploreNearByRecyclerAdapter extends RecyclerView.Adapter<ExploreNearByRecyclerAdapter.ViewHolder> {
+public class ExploreNearByRVAdapter extends RecyclerView.Adapter<ExploreNearByRVAdapter.ViewHolder> {
 
     Context context;
-    ArrayList<ExploreNearByRecyclerModel> modelArrayList;
+    ArrayList<ExploreNearByRVModel> modelArrayList;
 
     LatLng latLng;
 
-    public ExploreNearByRecyclerAdapter(Context context, ArrayList<ExploreNearByRecyclerModel> modelArrayList, LatLng latLng) {
+    public ExploreNearByRVAdapter(Context context, ArrayList<ExploreNearByRVModel> modelArrayList, LatLng latLng) {
         this.context = context;
         this.modelArrayList = modelArrayList;
         this.latLng = latLng;

@@ -4,14 +4,11 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.content.res.ResourcesCompat;
 
 import android.annotation.SuppressLint;
-import android.graphics.drawable.Drawable;
 import android.os.Bundle;
-import android.view.MotionEvent;
-import android.view.View;
+
 import android.widget.Toast;
 
-import com.example.gpsroutefinder.Interface.DrawableClickListener;
-import com.example.gpsroutefinder.R;
+
 import com.example.gpsroutefinder.databinding.SearchLocationBinding;
 
 public class SearchLocation extends AppCompatActivity {

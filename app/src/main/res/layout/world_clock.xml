@@ -20,8 +20,21 @@
         android:id="@+id/floatingButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:contentDescription="TODO"
+        app:backgroundTint="@color/white"
+        android:layout_marginEnd="@dimen/_10sdp"
+        app:fabSize="mini"
+        android:src="@android:drawable/ic_input_add"
+        android:tint="@color/black"
+        app:layout_constraintBottom_toBottomOf="@+id/action_bar"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:layout_marginTop="@dimen/_2sdp"
-        android:contentDescription="TODO" />
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/worldClockRV"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="@dimen/_5sdp"
+        android:layout_marginTop="?actionBarSize"/>
+
 </androidx.constraintlayout.widget.ConstraintLayout>

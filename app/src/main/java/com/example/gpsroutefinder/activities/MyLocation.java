@@ -60,37 +60,6 @@ public class MyLocation extends AppCompatActivity {
         myLocationBinding = MyLocationBinding.inflate(getLayoutInflater());
         setContentView(myLocationBinding.getRoot());
 
-        if (!isLocationEnabled(this)) {
-//            promptUserToEnableLocation();
-            //if location is not turned on, Pop custom dialog
-            AlertDialog.Builder notifyLocationServices = new AlertDialog.Builder(MyLocation.this);
-            notifyLocationServices.setTitle("Switch on Location Services");
-            notifyLocationServices.setMessage("Location Services must be turned on to complete this action. Also please take note that if on a very weak network connection,  such as 'E' Mobile Data or 'Very weak Wifi-Connections' it may take even 15 mins to load. If on a very weak network connection as stated above, location returned to application may be null or nothing and cause the application to crash.");
-
-            notifyLocationServices.setPositiveButton("Ok, Open Settings", new DialogInterface.OnClickListener() {
-                @Override
-                public void onClick(DialogInterface dialog, int which) {
-                    Intent openLocationSettings = new Intent(Settings.ACTION_LOCATION_SOURCE_SETTINGS);
-                    MyLocation.this.startActivity(openLocationSettings);
-                    finish();
-                }
-            });
-            notifyLocationServices.setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
-                @Override
-                public void onClick(DialogInterface dialog, int which) {
-
-                    finish();
-                }
-            });
-            notifyLocationServices.show();
-        }
-
-        //Dialog
-        //cancel -> close.dialog
-        //settings -> run this function {
-        //                          promptUserToEnableLocation()
-        //                          }
-
         // Obtain the SupportMapFragment and get notified when the map is ready to be used.
         supportMapFragment = (SupportMapFragment) getSupportFragmentManager().findFragmentById(R.id.googleMap);
         fusedLocationProviderClient = LocationServices.getFusedLocationProviderClient(this);
@@ -110,29 +79,9 @@ public class MyLocation extends AppCompatActivity {
         // visible only when Parent FAB button is clicked So
         // we have to handle the Parent FAB button first, by
         // using setOnClickListener you can see below
-        myLocationBinding.fab.setOnClickListener(view -> {
-            if (!isAllFabsVisible) {
-                // when isAllFabsVisible becomes true make all
-                // the action name texts and FABs VISIBLE
-                myLocationBinding.fab1.show();
-                myLocationBinding.fab2.show();
-                myLocationBinding.fab3.show();
-                // make the boolean variable true as we
-                // have set the sub FABs visibility to GONE
-                isAllFabsVisible = true;
-            } else {
-                // when isAllFabsVisible becomes true make
-                // all the action name texts and FABs GONE.
-                myLocationBinding.fab1.hide();
-                myLocationBinding.fab2.hide();
-                myLocationBinding.fab3.hide();
+        myLocationBinding.fab.setOnClickListener(view -> showFloatingButton());
 
-                // make the boolean variable false as we
-                // have set the sub FABs visibility to GONE
-                isAllFabsVisible = false;
-            }
-        });
-
+        //Dexter is an Android library that simplifies the process of requesting permissions at runtime.
         Dexter.withContext(getApplicationContext())
                 .withPermission(Manifest.permission.ACCESS_FINE_LOCATION)
                 .withListener(new PermissionListener() {
@@ -152,7 +101,7 @@ public class MyLocation extends AppCompatActivity {
                     }
                 }).check();
 
-    }
+    }  // End OnCreate Block
 
     public static boolean isLocationEnabled(Context context) {
         int locationMode = 0;
@@ -170,6 +119,7 @@ public class MyLocation extends AppCompatActivity {
         }
         return locationMode != Settings.Secure.LOCATION_MODE_OFF;
     }
+
     private void getCurrentLocation() {
 
         if (ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED
@@ -184,8 +134,8 @@ public class MyLocation extends AppCompatActivity {
             return;
         }
 
-
         if (isLocationEnabled(MyLocation.this)) {
+
             Log.e("TAG", "GPS is on");
             if (ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED
                     && ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
@@ -271,30 +221,56 @@ public class MyLocation extends AppCompatActivity {
             });
 
         }
-        else
-        {
-            AlertDialog.Builder notifyLocationServices = new AlertDialog.Builder(MyLocation.this);
-            notifyLocationServices.setTitle("Switch on Location Services");
-            notifyLocationServices.setMessage("Location Services must be turned on to complete this action. Also please take note that if on a very weak network connection,  such as 'E' Mobile Data or 'Very weak Wifi-Connections' it may take even 15 mins to load. If on a very weak network connection as stated above, location returned to application may be null or nothing and cause the application to crash.");
-
-            notifyLocationServices.setPositiveButton("Ok, Open Settings", new DialogInterface.OnClickListener() {
-                @Override
-                public void onClick(DialogInterface dialog, int which) {
-                    Intent openLocationSettings = new Intent(Settings.ACTION_LOCATION_SOURCE_SETTINGS);
-                    MyLocation.this.startActivity(openLocationSettings);
-                    finish();
-                }
-            });
-            notifyLocationServices.setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
-                @Override
-                public void onClick(DialogInterface dialog, int which) {
-
-                    finish();
-                }
-            });
-            notifyLocationServices.show();
+        else {
+            showDialogFunction();
         }
 
+    }
+
+    private void showDialogFunction() {
+        AlertDialog.Builder notifyLocationServices = new AlertDialog.Builder(MyLocation.this);
+        notifyLocationServices.setTitle("Switch on Location Services");
+        notifyLocationServices.setMessage("Location Services must be turned on to complete this action. Also please take note that if on a very weak network connection,  such as 'E' Mobile Data or 'Very weak Wifi-Connections' it may take even 15 mins to load. If on a very weak network connection as stated above, location returned to application may be null or nothing and cause the application to crash.");
+
+        notifyLocationServices.setPositiveButton("Ok, Open Settings", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+                Intent openLocationSettings = new Intent(Settings.ACTION_LOCATION_SOURCE_SETTINGS);
+                MyLocation.this.startActivity(openLocationSettings);
+                finish();
+            }
+        });
+        notifyLocationServices.setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+
+                finish();
+            }
+        });
+        notifyLocationServices.show();
+    }
+
+    private void showFloatingButton() {
+        if (!isAllFabsVisible) {
+            // when isAllFabsVisible becomes true make all
+            // the action name texts and FABs VISIBLE
+            myLocationBinding.fab1.show();
+            myLocationBinding.fab2.show();
+            myLocationBinding.fab3.show();
+            // make the boolean variable true as we
+            // have set the sub FABs visibility to GONE
+            isAllFabsVisible = true;
+        } else {
+            // when isAllFabsVisible becomes true make
+            // all the action name texts and FABs GONE.
+            myLocationBinding.fab1.hide();
+            myLocationBinding.fab2.hide();
+            myLocationBinding.fab3.hide();
+
+            // make the boolean variable false as we
+            // have set the sub FABs visibility to GONE
+            isAllFabsVisible = false;
+        }
     }
 
     private void shareAddress() {

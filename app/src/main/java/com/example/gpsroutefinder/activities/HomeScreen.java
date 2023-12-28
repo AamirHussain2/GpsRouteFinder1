@@ -7,6 +7,7 @@ import androidx.constraintlayout.widget.ConstraintLayout;
 import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.MotionEvent;
 import android.view.View;
 
@@ -14,6 +15,7 @@ import com.example.gpsroutefinder.R;
 import com.example.gpsroutefinder.databinding.HomeScreenBinding;
 import com.example.gpsroutefinder.databinding.NumberLocatorBinding;
 import com.example.gpsroutefinder.utils.LocaleHelper;
+import com.example.gpsroutefinder.utils.MySharedPreferences;
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.MobileAds;
 
@@ -69,5 +71,6 @@ public class HomeScreen extends AppCompatActivity {
 //        AdRequest adRequest = new AdRequest.Builder().build();
 //        //step 3
 //        homeScreenBinding.adView.loadAd(adRequest);
+
     }
 }
